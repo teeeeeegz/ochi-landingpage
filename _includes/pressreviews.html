@@ -1,0 +1,38 @@
+<div class="pressReviewsSection">
+
+    <div class="featuresHeaderSection">
+        <h1 class="featuresHeader">Love From The Press.</h1>
+        <p class="featuresHeaderDescription">And insightful reads. 🙂</p>
+    </div>
+
+    <div class="pressReviewsCollection">
+        {% for review in site.pressreviews %}
+
+        {% if review.quote %}
+        <div class="pressReview">
+            <div class="pressReviewIcon">
+                <a href="{{ review.siteurl }}">
+                    <span class="fa-stack fa-2x">
+                        <i class="iconReviewBack fas fa-circle fa-stack-2x"></i>
+                        <i class="iconReviewTop fas fa-{{ review.fontawesome_icon_name }} fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
+    
+            <div class="pressReviewText">
+                <h3>
+                    "{{ review.quote }}"
+                </h3>
+                <p>
+                    - {{ review.author }}
+                </p>
+                <p>
+                    <a href="{{ review.siteurl }}">Read on <strong>{{ review.sitename }}</strong></a>
+                </p>
+            </div>
+        </div>
+        {% endif %}
+    
+        {% endfor %}    
+    </div>
+</div>

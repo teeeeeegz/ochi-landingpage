@@ -1,0 +1,165 @@
+// Press Review List
+// .separator {
+// 	width: 75%;
+// 	margin: auto;
+// 	background-color: whitesmoke;
+// 	border: none;
+// 	height: 2px;
+// }
+
+.pressReviewsSection {
+	grid-area: pr;
+	display: flex;
+	flex: 0 1 auto;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+	margin-top: 124px;
+}
+
+.pressReviewsCollection {
+    display: flex;
+	flex: 0 1 auto;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+    margin-top: 64px;
+}
+
+.pressReview {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: calc(100%/2);
+
+    // margin-top: 32px;
+
+    // Add horizontal spacing
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.pressReview:nth-child(-n+2) {
+    padding-top: 0px;   
+}
+
+.pressReview:nth-child(2n) {
+	padding-bottom: 32px;   
+
+	// padding-right: 0px;
+}
+
+.pressReview:nth-child(2n+1) {
+	padding-bottom: 32px;   
+
+	// padding-left: 0px;
+}
+
+.pressReviewIcon {
+	// margin-top: 18px;
+}
+
+.pressReviewText {
+	margin-top: 12px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.pressReviewText > h3 {
+    font-size: 2.5rem;
+	color: $feature-title-color;
+	margin-top: 12px;
+}
+
+.pressReviewText > p {
+	color: $feature-text-color;
+	margin-top: 8px;
+	line-height: 1.5;
+}
+
+@media only screen and (max-width: 1000px) {
+    .pressReviewsSection {
+        margin-top: 96px;
+    }
+
+	.pressReviewsCollection {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5px;
+	}
+
+	.pressReview {
+		display: flex;
+		padding-top: 41px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		// margin-top: 24px;
+
+		width: 100%;
+
+	}
+
+	.pressReview:nth-child(2n) {
+		padding-bottom: 0px;   
+	}
+	
+	.pressReview:nth-child(2n+1) {
+		padding-bottom: 0px;   
+	}	
+
+	.pressReviewText > h3 {
+		font-size: 2.2rem;
+	}	
+}
+
+@media only screen and (max-width: 680px) {
+
+	.pressReviewsSection {
+		flex-grow: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 96px;
+	}
+
+	.pressReviewsCollection {
+		display: flex;
+		flex: 0 1 auto;
+		align-content: flex-start;
+		justify-content: flex-start;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		margin-top: 24px;
+	}
+
+	.pressReview {
+		display: flex;
+		// padding-top: 41px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+
+		margin-top: 24px;
+		margin-bottom: 24px;
+		padding-top: 0px;
+	}
+
+	.pressReview:nth-child(-n+3) {
+		// padding-top: 41px;   
+	}
+
+	.pressReview:nth-child(1) {
+		// padding-top: 0px;   
+	}
+
+	.pressReview:nth-child(3n) {
+		// padding-right: 0px;
+	}
+	
+	.pressReview:nth-child(3n+1) {
+		// padding-left: 0px;
+	}
+	
+} 

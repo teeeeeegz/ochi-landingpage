@@ -1,0 +1,33 @@
+<div class="platformFeatures">
+
+    <div class="featuresHeaderSection">
+        <h1 class="featuresHeader">All of the Platform Features.</h1>
+        <p class="featuresHeaderDescription">Take advantage of Focused Work’s deep integration with iOS 15, iPadOS 15, and macOS Monterey.</p>
+    </div>
+
+    <div class="featuresCollection">
+        {% for feature in site.platform_features %}
+
+        {% if feature.title %}
+        <div class="feature">
+            <div>
+                <span class="fa-stack fa-1x">
+                    <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                    <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+                </span>
+            </div>
+            <div class="featureText">
+                <h3>
+                    {{ feature.title }}
+                </h3>
+                <p>
+                    {{ feature.description }}
+                </p>
+            </div>
+        </div>
+        {% endif %}
+    
+        {% endfor %}    
+    </div>
+
+</div>

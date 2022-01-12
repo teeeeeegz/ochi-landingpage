@@ -1,0 +1,33 @@
+<div class="productFeatures">
+
+    <div class="featuresHeaderSection">
+        <h1 class="featuresHeader">Why you’ll love Focused Work.</h1>
+        <p class="featuresHeaderDescription">Focused Work is built for people who struggle with focusing and structuring their time effectively.</p>
+    </div>
+
+    <div class="featuresCollection">
+        {% for feature in site.features %}
+
+        {% if feature.title %}
+        <div class="feature">
+            <div>
+                <span class="fa-stack fa-1x">
+                    <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                    <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+                </span>
+            </div>
+            <div class="featureText">
+                <h3>
+                    {{ feature.title }}
+                </h3>
+                <p>
+                    {{ feature.description }}
+                </p>
+            </div>
+        </div>
+        {% endif %}
+    
+        {% endfor %}    
+    </div>
+
+</div>

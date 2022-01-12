@@ -1,0 +1,327 @@
+// iPhone Device Preview
+
+.iphonePreview {
+	grid-area: p;
+	margin-top: 24px;
+
+	// Original hollow silhouette
+
+	// background-image: url($device-color);
+	// background-size: 364px auto;
+	// background-repeat: no-repeat;
+}
+
+.iphoneScreen {
+	width: 320px;
+	
+	// -webkit-clip-path: url(#screenMask);
+	// clip-path: url(#screenMask);
+	// margin-left: 20px;
+	// margin-top: 18px;
+}
+
+.videoContainer {
+	width: 349px;
+	height: 755px;
+	-webkit-clip-path: url(#screenMask);
+	clip-path: url(#screenMask);
+	margin-left: 26px;
+	margin-top: 23px;
+}
+
+.videoContainer > video {
+	width: 349px;
+	height: 755px;
+}
+
+@media only screen and (max-width: 1070px) {
+
+	.iphonePreview {
+		// background-size: 370px auto;
+	}
+
+	.iphoneScreen {
+		// width: 322px;
+		// margin-left: 24px;
+		// margin-top: 22px;
+	}
+
+	.videoContainer {
+		width: 322px;
+		height: 698px;
+		margin-left: 24px;
+		margin-top: 22px;
+	}
+	
+	.videoContainer > video {
+		width: 322px;
+		height: 698px;
+	}
+	
+} 
+
+@media only screen and (max-width: 1000px) {
+
+	.iphonePreview {
+		display: flex;
+		background-size: 260px auto;
+		background-position: center 0;
+		margin-top: 72px;
+		justify-content: center;
+		padding-bottom: 75px;
+	}
+
+	.iphoneScreen {
+		width: 226px;
+		height: auto;
+		
+		// -webkit-clip-path: url(#screenMask);
+		// clip-path: url(#screenMask);
+		margin: 0px;
+		// margin-top: 17px;
+	}
+
+	.videoContainer {
+		width: 226px;
+		height: 488px;
+		margin-left: 0px;
+		margin-top: 17px;
+	}
+
+	.videoContainer > video {
+		width: 226px;
+		height: 488px;
+    }	
+} 
+
+
+// App Title, Price, Description and Links
+
+.appInfo {
+	grid-area: i;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 96px;
+	padding-right: 64px;
+	align-content: flex-start;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.appInfo {
+		padding-top: 0px;
+        padding-right: 0px;
+        // align-content: center;
+		justify-content: center;
+	}
+
+} 
+
+.appIconShadow {
+	display: flex;
+	filter: $drop-shadow;
+}
+
+.appIconLarge {
+	width: 120px;
+	height: 120px;
+	-webkit-clip-path: url(#shape120);
+	clip-path: url(#shape120);
+}
+
+// App Info Container
+
+.appInfoContainer {
+	display: flex;
+	// flex: 0 1 auto;
+	flex-direction: column;
+	// align-items: start;
+	// justify-content: center;
+	// margin-left: 30px;
+	// width: 100%;
+}
+
+// App Name Price
+
+.appNamePriceContainer {
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	margin-left: 30px;
+}
+
+.appName {
+	color: $app-title-color;
+}
+
+.appPrice {
+	color: $app-price-color;
+	font-weight: normal;
+	margin-top: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.appNamePriceContainer {
+		width: 100%;
+		margin-left: 0px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.appName {
+		margin-top: 30px;
+		text-align: center;
+	}
+	
+	.appPrice {
+		margin-top: 13px;
+		text-align: center;
+	}
+	
+} 
+
+.appDescriptionContainer {
+	flex: 0 1 auto;
+	align-items: flex-start;
+	width: 100%;
+	font-weight: normal;
+}
+
+.bannerTitle {
+	font-size: 5rem;
+	line-height: 1.3;
+
+    color: $app-title-color;
+}
+
+.bannerDescription {
+	font-size: 3.1rem;
+	line-height: 1.5;
+
+    color: $app-description-color;
+	margin-top: 32px;
+}
+
+.appDescription {
+	color: $app-description-color;
+}
+
+.appTitle {
+    display: none;
+
+    font-size: 2rem;
+    line-height: 1.2;
+    // text-align: center;
+
+    color: $app-title-color;
+    // align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .appDescriptionContainer {
+    //     flex: 0 1 auto;
+    //     align-items: flex-start;
+    //     width: 100%;
+    //     font-weight: normal;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .bannerTitle {
+        font-size: 4rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .bannerDescription {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+	.appDescription {
+		text-align: center;
+	}
+} 
+
+@media only screen and (max-width: 528px) {
+	.appDescriptionContainer {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+    .appTitle {
+        display: inline;
+        text-align: center;
+    }
+}
+
+// Download on store
+
+.downloadButtonsContainer {
+	display: flex;
+	display: inline-block;
+	margin-top: 48px;
+	filter: $drop-shadow;
+	align-items: center;
+}
+
+.appStore {
+	height: 75px;
+	margin-right: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.downloadButtonsContainer {
+		text-align: center;
+	}
+
+	.appStore {
+		margin-left: 8px;
+		margin-right: 8px;	
+	}
+	
+} 
+
+@media only screen and (max-width: 768px) {
+	.downloadButtonsContainer {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.appStore {
+		margin-bottom: 16px;
+		// margin-right: 0px;
+	}
+}
+
+
+// Play Store
+
+.playStore {
+	height: 75px;
+	margin-right: 24px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.playStore {
+		margin-right: 24px;
+		margin-bottom: 0px;
+	}
+	
+} 
+
+@media only screen and (max-width: 528px) {
+
+	.playStore {
+		margin-right: 0px;
+		margin-bottom: 24px;
+	}
+	
+} 
+

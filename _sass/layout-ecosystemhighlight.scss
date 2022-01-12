@@ -1,0 +1,35 @@
+// Ecosystem highlight
+
+.ecosystemHighlight {
+	grid-area: eh;
+	display: flex;
+	flex: 0 1 auto;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+	margin-top: 124px;
+}
+
+.ecosystemDevices {
+	width: 992px;
+	margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .ecosystemHighlight {
+        margin-top: 96px;
+    }
+
+    .ecosystemDevices {
+        width: 100%;
+    }    
+}
+
+@media only screen and (max-width: 680px) {
+
+	.ecosystemDevices {
+		margin-top: 48px;
+    }    
+}

@@ -1,0 +1,146 @@
+// Footer
+
+footer {
+	grid-area: f;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footerSubscribe {
+	margin-top: 32px; 
+	margin-bottom: 32px;
+	justify-content: center;
+}
+
+.footerSubscribeSeparator {
+	background-color: whitesmoke;
+	border: none;
+	display: block;
+	height: 2px;
+	width: 500px;
+	// margin: 1.5rem 0;
+
+	margin-top: 32px; 
+	margin-bottom: 32px;
+}
+
+.footerTextSection {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+
+}
+
+.footerText {
+	display: block;
+	// line-height: 3;
+	// width: 100%;
+
+	color: $footer-text-color;
+	text-align: center;
+	
+	font-size: 2.5rem;
+	
+	// margin-top: 4px;
+}
+
+.footerMadeBy {
+	display: flex;
+	flex: 0 0 100%;
+	justify-content: center;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+.footerIcons {
+	display: flex;
+	flex: 0 0 100%;
+	justify-content: center;
+	padding-bottom: 32px;
+}
+
+.footerLinks {
+	display: flex;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.footerLinks a {
+	margin-right: 30px;
+}
+
+.footerLinks a:last-child {
+	margin-right: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.footerLinks {
+		flex-direction: column;
+	}
+
+	.footerLinks a {
+		justify-content: stretch;
+		margin-right: 0px;
+		margin-top: 20px;
+	}
+
+	.footerLinks a:first-child {
+		margin-top: 0px;
+	}	
+
+	.footerSubscribeSeparator {
+		width: 375px;
+	}
+
+}
+
+@media only screen and (max-width: 1000px) {
+	
+	.footerSubscribeSeparator {
+		width: 500px;
+	}
+
+	.footerText {
+		color: $footer-text-color;
+		display: block;
+		line-height: 1.5;
+		width: 100%;
+		text-align: center;
+		/*padding-top: 54px;*/
+		/*padding-bottom: 61px;*/
+	}
+	
+	.footerIcons {
+		display: flex;
+	}
+} 
+
+@media only screen and (max-width: 528px) {
+	.footerSubscribeSeparator {
+		width: 355px;
+	}
+}
+
+// Product Hunt
+
+.productHuntSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.productHuntButton {
+	display: block;
+    width: 250px; height: 75px;
+}
+
+@media only screen and (min-width: 768px) {
+	.productHuntButton {
+	}
+
+}
+
