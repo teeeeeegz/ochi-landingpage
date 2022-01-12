@@ -74,6 +74,10 @@
         body {
           background: #fafafa;
         }
+
+        span {
+          color: #000000;
+        }
       }
 
       @media (prefers-color-scheme: dark) {
@@ -87,6 +91,10 @@
 
         body {
           background: #000000;
+        }
+
+        span {
+          color: #fafafa;
         }
       }
     </style>
@@ -107,9 +115,24 @@
         </div>
 
         <p class="content">
+          <a id="originalUrl" hidden=true><strong>Reopen Website</strong></a>
+          <span id="bullet" hidden=true>•</span>
           <a href="ochi://open"><strong>Open Ochi</strong></a>
         </p>
       </div>
     </div>
   </body>
+
+  <script>
+    window.onload = function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const originalUrl = urlParams.get("url");
+
+      if (originalUrl) {
+        document.getElementById("originalUrl").href = decodeURIComponent(originalUrl);
+        document.getElementById("originalUrl").hidden = false;
+        document.getElementById("bullet").hidden = false;
+      }
+    };
+  </script>
 </html>
