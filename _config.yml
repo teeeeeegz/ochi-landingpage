@@ -4,7 +4,7 @@ page_title                                :                                   # 
 # App Info
 ios_app_id                                : 1603024803                        # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 
-appstore_link                             :                                   # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://newsletter.ochithe.app/join                                  # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            :                                   # Enter Google Play Store URL.
 presskit_download_link                    :                                   # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
@@ -34,80 +34,84 @@ youtube_username                          :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Flexible Focus Sessions
-    description                           : Create repeatable sessions for different tasks, structured with Focused Work, Break and Planning stages.
+  - title                                 : Configurable Filters
+    description                           : Create and start Timed Filters that are configured to Block or Allow access.
     fontawesome_icon_name                 : stopwatch
     
-  - title                                 : Self-Accountability
-    description                           : Each session encourages you to focus on a specific task or goal, which remains on-screen during a session.
+  - title                                 : Block Apps
+    description                           : Prevent access to iOS and macOS apps while a filter is active.
+    fontawesome_icon_name                 : stopwatch
+    
+  - title                                 : Block Websites & Categories
+    description                           : Prevent access to websites, including selectable categories such as Chat, News, and Social Media.
     fontawesome_icon_name                 : sticky-note
 
-  - title                                 : Focus Reminders
-    description                           : Avoid distractions during a focus session, with fun periodic reminders to maintain your focus.
+  - title                                 : Automations
+    description                           : Assign shortcuts to filters that can automatically turn a Focus on or off.
     fontawesome_icon_name                 : exclamation
 
-  - title                                 : Session Reflection
-    description                           : Rate your level of productivity during the session. Journal about what worked well for you and what didn't.
+  - title                                 : Suspend Filtering
+    description                           : Set a limit on how frequently a timed filter can be suspended, per hour.
     fontawesome_icon_name                 : pen
 
-  - title                                 : Daily Goals & Streaks
-    description                           : Create healthy productivity habits by completing focus session, focused work, and break goals each day.
+  - title                                 : Filter Privacy
+    description                           : Obfuscate and prevent editing filter details with Biometric or Apple Watch unlock.
     fontawesome_icon_name                 : chart-pie
 
-  - title                                 : Time Tracking with Toggl
-    description                           : Assign Projects, Tags, and Tasks to each session for a complete breakdown on time spent.
-    fontawesome_icon_name                 : power-off
+  # - title                                 : Time Tracking with Toggl
+  #   description                           : Assign Projects, Tags, and Tasks to each session for a complete breakdown on time spent.
+  #   fontawesome_icon_name                 : power-off
 
 
 platform_features                         :
 
   - title                                 : Siri Shortcuts
-    description                           : Start a Focus Session with Siri. Pause, Skip, Restart the current stage, and adjust the timer volume.
+    description                           : Turn a Filter on with Siri. Suspend a filter if you need temporary access to an app or website.
     fontawesome_icon_name                 : layer-group
 
   - title                                 : Shortcut Automations
-    description                           : Automatically turn a Focus on or off. Manage distractions and trigger shortcuts mid-session.
+    description                           : Automatically turn a Focus on or off. Manage distractions and trigger shortcuts when a filter starts & ends.
     fontawesome_icon_name                 : eye
 
-  - title                                 : Block Apps & Websites
-    description                           : Automatically block iOS/Mac apps & websites until you've completed your focus session.
-    fontawesome_icon_name                 : ban
+  # - title                                 : Block Apps & Websites
+  #   description                           : Automatically block iOS/Mac apps & websites until you've completed your focus session.
+  #   fontawesome_icon_name                 : ban
 
-  - title                                 : Mid-session alerts on all devices
-    description                           : Start a focus session on Mac and receive updates on iPhone, iPad, Apple Watch, and vice versa.
-    fontawesome_icon_name                 : bell
+  # - title                                 : Mid-session alerts on all devices
+  #   description                           : Start a focus session on Mac and receive updates on iPhone, iPad, Apple Watch, and vice versa.
+  #   fontawesome_icon_name                 : bell
 
   - title                                 : iCloud Syncing
-    description                           : Work from your iPhone, iPad, or Mac. Created sessions and productivity stats are synced between each device.
+    description                           : Created filters and filter statistics are synced between iPhone, iPad, and Mac.
     fontawesome_icon_name                 : sync
 
-  - title                                 : Share Extensions
-    description                           : Select a task in your favourite task manager app, and quickly start a focus session via the Share Sheet.
-    fontawesome_icon_name                 : external-link-alt
+  # - title                                 : Share Extensions
+  #   description                           : Select a task in your favourite task manager app, and quickly start a focus session via the Share Sheet.
+  #   fontawesome_icon_name                 : external-link-alt
 
   - title                                 : Themeable Widgets
-    description                           : Add Current Session, Daily Goals, and Session Select widgets, with Pure Black & Completely Black themes.
+    description                           : Add a Current Filter widget, with adjustable themes.
     fontawesome_icon_name                 : th-large
 
   - title                                 : App Icons
     description                           : Pick an app icon that matches your homescreen. Coloured, Light, and Dark variants.
     fontawesome_icon_name                 : images
 
-  - title                                 : Productivity Export
-    description                           : Export completed sessions & breadcrumbs in CSV format, and analyse them in Numbers.
-    fontawesome_icon_name                 : file-download
+  # - title                                 : Productivity Export
+  #   description                           : Export completed sessions & breadcrumbs in CSV format, and analyse them in Numbers.
+  #   fontawesome_icon_name                 : file-download
 
   - title                                 : Privacy Focused
     description                           : No account signups. All user data is securely stored and managed via iCloud, with each session run on-device.
     fontawesome_icon_name                 : mask
 
-  - title                                 : More iOS & iPadOS Goodies
-    description                           : VoiceOver, Split View & Slide Over, Dark Mode themes, Drag & Drop, Quick Actions, Low Power Mode.
-    fontawesome_icon_name                 : mobile-alt
+  # - title                                 : More iOS & iPadOS Goodies
+  #   description                           : VoiceOver, Split View & Slide Over, Dark Mode themes, Drag & Drop, Quick Actions, Low Power Mode.
+  #   fontawesome_icon_name                 : mobile-alt
 
-  - title                                 : More macOS Goodies
-    description                           : Keyboard Shortcuts, Menu Bar Timer, Shortcuts for Mac, Alfred automation, URL Schemes.
-    fontawesome_icon_name                 : laptop
+  # - title                                 : More macOS Goodies
+  #   description                           : Keyboard Shortcuts, Menu Bar Timer, Shortcuts for Mac, Alfred automation, URL Schemes.
+  #   fontawesome_icon_name                 : laptop
 
 
 
@@ -115,22 +119,22 @@ platform_features                         :
 # Press Review List                       Edit, add or remove press reviews to be presented.
 pressreviews                              :
 
-  - author                                : Ryan Christoffel
-    quote                                 : A simple, but valuable utility for creating timed focus sessions of productivity.
-    sitename                              : MacStories
-    siteurl                               : https://www.macstories.net/reviews/focused-work-review-staying-on-task-amidst-growing-distractions/
+  - author                                : 
+    quote                                 : 
+    sitename                              : 
+    siteurl                               : 
     fontawesome_icon_name                 : heart
     
-  - author                                : Victor Marks
-    quote                                 : Focused Work is a tool that helps overcome that first step.
-    sitename                              : Knapsack
-    siteurl                               : https://knapsack.news/focused-work-how-do-we-get-anything-done-at-all/
+  - author                                : 
+    quote                                 : 
+    sitename                              : 
+    siteurl                               : 
     fontawesome_icon_name                 : heart
     
-  - author                                : Oliver Haslam
-    quote                                 : Focused Work helps you stay on track better than ever.
-    sitename                              : iMore
-    siteurl                               : https://www.imore.com/focused-work-gains-ios-14-home-screen-widgets-help-you-stay-track-better-ever/
+  - author                                : 
+    quote                                 : 
+    sitename                              : 
+    siteurl                               : 
     fontawesome_icon_name                 : heart
 
 

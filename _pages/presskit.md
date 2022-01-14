@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Press Kit
-include_in_header: yes
+include_in_header: no
 ---
 
 # What is Focused Work?
