@@ -34,29 +34,29 @@ youtube_username                          :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Configurable Filters
-    description                           : Create and start Timed Filters that are configured to Block or Allow access.
-    fontawesome_icon_name                 : stopwatch
-    
   - title                                 : Block Apps
     description                           : Prevent access to iOS and macOS apps while a filter is active.
-    fontawesome_icon_name                 : stopwatch
+    fontawesome_icon_name                 : mobile-alt
     
   - title                                 : Block Websites & Categories
-    description                           : Prevent access to websites, including selectable categories such as Chat, News, and Social Media.
-    fontawesome_icon_name                 : sticky-note
+    description                           : Prevent access to websites, including website categories such as Social Media, Chat, and News.
+    fontawesome_icon_name                 : globe
 
-  - title                                 : Automations
-    description                           : Assign shortcuts to filters that can automatically turn a Focus on or off.
-    fontawesome_icon_name                 : exclamation
+  - title                                 : Flexible Filters
+    description                           : Start an Untimed or Timed filter that can be configured to Block or Allow access to particular apps and websites.
+    fontawesome_icon_name                 : stopwatch    
 
   - title                                 : Suspend Filtering
-    description                           : Set a limit on how frequently a timed filter can be suspended, per hour.
-    fontawesome_icon_name                 : pen
+    description                           : Set a limit on how frequently a timed filter can be temporarily suspended, per hour.
+    fontawesome_icon_name                 : pause
+
+  - title                                 : Filter Automations (Mac)
+    description                           : Assign shortcuts to filters that can automatically turn a Focus on or off.
+    fontawesome_icon_name                 : eye
 
   - title                                 : Filter Privacy
-    description                           : Obfuscate and prevent editing filter details with Biometric or Apple Watch unlock.
-    fontawesome_icon_name                 : chart-pie
+    description                           : Hide filter details and prevent editing, with Biometric or Apple Watch authentication.
+    fontawesome_icon_name                 : lock
 
   # - title                                 : Time Tracking with Toggl
   #   description                           : Assign Projects, Tags, and Tasks to each session for a complete breakdown on time spent.
@@ -69,9 +69,9 @@ platform_features                         :
     description                           : Turn a Filter on with Siri. Suspend a filter if you need temporary access to an app or website.
     fontawesome_icon_name                 : layer-group
 
-  - title                                 : Shortcut Automations
-    description                           : Automatically turn a Focus on or off. Manage distractions and trigger shortcuts when a filter starts & ends.
-    fontawesome_icon_name                 : eye
+  # - title                                 : Shortcut Automations
+  #   description                           : Automatically turn a Focus on or off. Manage distractions and trigger shortcuts when a filter starts & ends.
+  #   fontawesome_icon_name                 : eye
 
   # - title                                 : Block Apps & Websites
   #   description                           : Automatically block iOS/Mac apps & websites until you've completed your focus session.
@@ -90,11 +90,11 @@ platform_features                         :
   #   fontawesome_icon_name                 : external-link-alt
 
   - title                                 : Themeable Widgets
-    description                           : Add a Current Filter widget, with adjustable themes.
+    description                           : Add a Current Filter widget to your homescreen, with adjustable themes.
     fontawesome_icon_name                 : th-large
 
   - title                                 : App Icons
-    description                           : Pick an app icon that matches your homescreen. Coloured, Light, and Dark variants.
+    description                           : Pick an app icon that matches your wallpaper. Coloured, Light, and Dark variants.
     fontawesome_icon_name                 : images
 
   # - title                                 : Productivity Export
@@ -102,8 +102,12 @@ platform_features                         :
   #   fontawesome_icon_name                 : file-download
 
   - title                                 : Privacy Focused
-    description                           : No account signups. All user data is securely stored and managed via iCloud, with each session run on-device.
+    description                           : No account signups. All user data is securely stored and managed via iCloud, with each filter run on-device.
     fontawesome_icon_name                 : mask
+
+  - title                                 : More Goodies
+    description                           : Split View & Slide Over, Keyboard Shortcuts, Menu Bar app, Shortcuts for Mac
+    fontawesome_icon_name                 : mobile-alt
 
   # - title                                 : More iOS & iPadOS Goodies
   #   description                           : VoiceOver, Split View & Slide Over, Dark Mode themes, Drag & Drop, Quick Actions, Low Power Mode.
@@ -119,23 +123,23 @@ platform_features                         :
 # Press Review List                       Edit, add or remove press reviews to be presented.
 pressreviews                              :
 
-  - author                                : 
-    quote                                 : 
-    sitename                              : 
-    siteurl                               : 
-    fontawesome_icon_name                 : heart
+  # - author                                : 
+  #   quote                                 : 
+  #   sitename                              : 
+  #   siteurl                               : 
+  #   fontawesome_icon_name                 : heart
     
-  - author                                : 
-    quote                                 : 
-    sitename                              : 
-    siteurl                               : 
-    fontawesome_icon_name                 : heart
+  # - author                                : 
+  #   quote                                 : 
+  #   sitename                              : 
+  #   siteurl                               : 
+  #   fontawesome_icon_name                 : heart
     
-  - author                                : 
-    quote                                 : 
-    sitename                              : 
-    siteurl                               : 
-    fontawesome_icon_name                 : heart
+  # - author                                : 
+  #   quote                                 : 
+  #   sitename                              : 
+  #   siteurl                               : 
+  #   fontawesome_icon_name                 : heart
 
 
 
