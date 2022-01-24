@@ -54,7 +54,7 @@ features                                  :
     description                           : Assign shortcuts to filters that turn on Focus and filters on other devices.
     fontawesome_icon_name                 : eye
 
-  - title                                 : Private Filters
+  - title                                 : Lock & Hide Filter Details
     description                           : Keep filter details private, and prevent editing with Biometric authentication.
     fontawesome_icon_name                 : lock
 
