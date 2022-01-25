@@ -4,7 +4,7 @@ title: Press Kit
 include_in_header: no
 ---
 
-# What is Focused Work?
+# What is Ochi?
 
 **Focused Work is a flexible Focus Timer that helps you stay productive and avoid burnout.**
 
@@ -219,9 +219,9 @@ Focused Work launched to the Apple App Store on September 8th 2020.
 
 ## Availability
 
-Focused Work is available in all territories that the App Store supports, and can be downloaded [here](https://apps.apple.com/us/app/id1523968394).
+Focused Work is available in all territories that the App Store supports, and can be downloaded [here](https://apps.apple.com/app/id1603024803).
 
-If you'd like to be kept in the loop with major updates, please check out this [this page](https://newsletter.focusedwork.app).
+If you'd like to be kept in the loop with major updates, please check out this [this page](https://newsletter.ochithe.app).
 
 
 ## About the Developer
@@ -242,4 +242,4 @@ I hope it encourages people to get more productive work done every day, as it ha
 
 ## Contact
 
-If you have any questions, reach out to me at [focusedworkapp@michaeltigas.com.au](mailto:focusedworkapp@michaeltigas.com.au), or on [Twitter](https://twitter.com/michael_tigas).
+If you have any questions, reach out to me at [ochi@michaeltigas.com.au](mailto:ochi@michaeltigas.com.au), or on [Twitter](https://twitter.com/michael_tigas).
