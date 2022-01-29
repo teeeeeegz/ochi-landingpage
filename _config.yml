@@ -35,7 +35,7 @@ youtube_username                          :
 features                                  :
 
   - title                                 : Control access to Apps & Websites
-    description                           : Apply Block or Allow filters for groups of iOS & Mac apps, and websites.
+    description                           : Apply Block or Allow filters for groups of iOS apps, Mac apps, and websites.
     fontawesome_icon_name                 : mobile-alt
     
   - title                                 : Filter Website Categories
@@ -43,11 +43,11 @@ features                                  :
     fontawesome_icon_name                 : globe
 
   - title                                 : Apply Multiple Filters
-    description                           : Simultaneously run Untimed or Timed filters configured with different rules.
+    description                           : Simultaneously run Timed and Untimed filters configured with different rules.
     fontawesome_icon_name                 : stopwatch    
 
   - title                                 : Suspend Filtering
-    description                           : Limit how often filters can be temporarily suspended each hour.
+    description                           : Limit how often filters can be temporarily suspended.
     fontawesome_icon_name                 : pause
 
   - title                                 : Filter Automations (Mac)
@@ -90,7 +90,7 @@ platform_features                         :
   #   fontawesome_icon_name                 : external-link-alt
 
   - title                                 : Themeable Widgets
-    description                           : Add filter status widgets to your homescreen, with adjustable themes.
+    description                           : Add adjustable filter start & status widgets to your homescreen.
     fontawesome_icon_name                 : th-large
 
   - title                                 : App Icons
