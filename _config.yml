@@ -42,6 +42,10 @@ features                                  :
     description                           : Prevent access to groups of websites, including Social Media, Chat, and News.
     fontawesome_icon_name                 : globe
 
+  - title                                 : Schedule Recurring Filters
+    description                           : No more late night Twitter, Facebook, or YouTube on weeknights!
+    fontawesome_icon_name                 : calendar-check    
+
   - title                                 : Apply Multiple Filters
     description                           : Simultaneously run Timed and Untimed filters configured with different rules.
     fontawesome_icon_name                 : stopwatch    
@@ -57,6 +61,10 @@ features                                  :
   - title                                 : Lock & Hide Filter Details
     description                           : Keep filter details private, and prevent editing with Biometric authentication.
     fontawesome_icon_name                 : lock
+
+  - title                                 : Dashboard Stats
+    description                           : Observe how many distracting apps & websites you've avoided each day.
+    fontawesome_icon_name                 : chart-area
 
   # - title                                 : Time Tracking with Toggl
   #   description                           : Assign Projects, Tags, and Tasks to each session for a complete breakdown on time spent.
