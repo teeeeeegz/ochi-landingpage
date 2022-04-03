@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     <title>Filter Active | Ochi</title>
     <style>
       html {
@@ -106,18 +108,18 @@
         <img class="icon" src="filtericon.png" alt="Ochi Icon" />
 
         <div class="title">
-          <h1>Filter Active</h2>
+          <h1 id="titleValue">Filter Active</h2>
         </div>
 
         <div class="subtitle">
-          <h2>This website is currently off-limits.</h2>
-          <h2>You will be able to access this site again after the filter is no longer active.</h2>
+          <h2 id="subtitleOneValue">This website is currently off-limits.</h2>
+          <h2 id="subtitleTwoValue">You will be able to access this site again after the filter is no longer active.</h2>
         </div>
 
         <p class="content">
-          <a id="originalUrl" hidden=true><strong>Reopen Website</strong></a>
+          <strong><a id="originalUrl" hidden=true>Reopen Website</a></strong>
           <span id="bullet" hidden=true>•</span>
-          <a href="ochi://open"><strong>Open Ochi</strong></a>
+          <strong><a id="openApp" href="ochi://open">Open Ochi</a></strong>
         </p>
       </div>
     </div>
@@ -126,8 +128,29 @@
   <script>
     window.onload = function () {
       const urlParams = new URLSearchParams(window.location.search);
-      const originalUrl = urlParams.get("url");
 
+      const locale = urlParams.get("locale");
+
+      if (locale) {
+        if (locale == "de") {
+          document.getElementById("titleValue").innerHTML = "Filter Aktiv";
+          document.getElementById("subtitleOneValue").innerHTML = "Diese Website ist derzeit nicht zugänglich.";
+          document.getElementById("subtitleTwoValue").innerHTML = "Wenn der Filter nicht mehr aktiv ist, können Sie wieder auf diese Website zugreifen.";
+          document.getElementById("originalUrl").innerHTML = "Website wiedereröffnen";
+          document.getElementById("openApp").innerHTML = "Ochi öffnen";
+        }
+        
+        if (locale == "es") {
+          document.getElementById("titleValue").innerHTML = "Filtro Activo";
+          document.getElementById("subtitleOneValue").innerHTML = "Este sitio web está actualmente prohibido.";
+          document.getElementById("subtitleTwoValue").innerHTML = "Podrá volver a acceder a este sitio cuando el filtro deje de estar activo.";
+          document.getElementById("originalUrl").innerHTML = "Reabrir el sitio web";
+          document.getElementById("openApp").innerHTML = "Abrir Ochi";
+        }
+      }
+
+      const originalUrl = urlParams.get("url");
+      
       if (originalUrl) {
         document.getElementById("originalUrl").href = decodeURIComponent(originalUrl);
         document.getElementById("originalUrl").hidden = false;
