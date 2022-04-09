@@ -149,6 +149,15 @@
           document.getElementById("originalUrl").innerHTML = "Reabrir el sitio web";
           document.getElementById("openApp").innerHTML = "Abrir Ochi";
         }
+
+        if (locale == "zh") {
+          document.title = "启用的过滤规则 | Ochi";
+          document.getElementById("titleValue").innerHTML = "启用的过滤规则";
+          document.getElementById("subtitleOneValue").innerHTML = "当前该网站限制访问。";
+          document.getElementById("subtitleTwoValue").innerHTML = "该过滤规则不启用时，可以再次访问该网站。";
+          document.getElementById("originalUrl").innerHTML = "刷新网站";
+          document.getElementById("openApp").innerHTML = "打开 Ochi";
+        }
       }
 
       const originalUrl = urlParams.get("url");
