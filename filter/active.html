@@ -158,6 +158,15 @@
           document.getElementById("originalUrl").innerHTML = "刷新网站";
           document.getElementById("openApp").innerHTML = "打开 Ochi";
         }
+
+        if (locale == "hi") {
+          document.title = "छानना सक्रिय | Ochi";
+          document.getElementById("titleValue").innerHTML = "छानना सक्रिय";
+          document.getElementById("subtitleOneValue").innerHTML = "यह वेबसाइट वर्तमान में ऑफ-लिमिट है।";
+          document.getElementById("subtitleTwoValue").innerHTML = "छानना जब सक्रिय नहीं होगा उसके बाद आप इस साइट को फिर से एक्सेस कर पाएंगे।";
+          document.getElementById("originalUrl").innerHTML = "वेबसाइट फिर से खोलें";
+          document.getElementById("openApp").innerHTML = "Ochi खोलें";
+        }
       }
 
       const originalUrl = urlParams.get("url");
