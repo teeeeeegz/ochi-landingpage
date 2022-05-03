@@ -167,6 +167,15 @@
           document.getElementById("originalUrl").innerHTML = "वेबसाइट फिर से खोलें";
           document.getElementById("openApp").innerHTML = "Ochi खोलें";
         }
+
+        if (locale == "vi") {
+          document.title = "Bộ lọc đang hoạt động | Ochi";
+          document.getElementById("titleValue").innerHTML = "Bộ lọc đang hoạt động";
+          document.getElementById("subtitleOneValue").innerHTML = "Trang web này hiện đang bị giới hạn.";
+          document.getElementById("subtitleTwoValue").innerHTML = "Bạn sẽ có thể truy cập lại trang web này sau khi bộ lọc không còn hoạt động.";
+          document.getElementById("originalUrl").innerHTML = "Mở lại trang web";
+          document.getElementById("openApp").innerHTML = "Mở Ochi";
+        }
       }
 
       const originalUrl = urlParams.get("url");
