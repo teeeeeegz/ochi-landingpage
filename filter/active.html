@@ -176,6 +176,15 @@
           document.getElementById("originalUrl").innerHTML = "Mở lại trang web";
           document.getElementById("openApp").innerHTML = "Mở Ochi";
         }
+        
+        if (locale == "fr") {
+          document.title = "Filtre actif | Ochi";
+          document.getElementById("titleValue").innerHTML = "Filtre actif";
+          document.getElementById("subtitleOneValue").innerHTML = "Ce site web est actuellement hors limites.";
+          document.getElementById("subtitleTwoValue").innerHTML = "Vous pourrez à nouveau accéder à ce site lorsque le filtre ne sera plus actif.";
+          document.getElementById("originalUrl").innerHTML = "Rouvrir le site web";
+          document.getElementById("openApp").innerHTML = "Ouvrir Ochi";
+        }
       }
 
       const originalUrl = urlParams.get("url");
