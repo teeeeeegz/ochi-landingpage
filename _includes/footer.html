@@ -75,24 +75,21 @@
 		</a>
 	</div> -->
 
-	<div class="footerLinks">
-		{% for page in site.pages %}
+	<div style="display: inline-block; vertical-align: middle;">
+		<div class="footerLinks" style="justify-content: center;">
+			{% for page in site.pages %}
 			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
-		{% endfor %}
-		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
-		{% endif %}
-	</div>
+			{% endfor %}
+			{% if site.presskit_download_link %}
+				<a href="{{ site.presskit_download_link }}">Press Kit</a>
+			{% endif %}
+		</div>
 
-	<br/>
-
-	<div class="footerLinks">
-		<p>
+		<div class="footerLinks" style="justify-content: center;">
 			<a href="https://dumbphone.so?ref=ochi">Dumb Phone</a>
 			<a href="https://focusedOS.com?ref=ochi">focusedOS</a>
 			<a href="https://focusedwork.app?ref=ochi">Focused Work</a>
 			<a href="https://news.tigas.io?ref=ochi">Newsletter for Indie Makers</a>
-		</p>
-
+		</div>
 	</div>
 </footer>
